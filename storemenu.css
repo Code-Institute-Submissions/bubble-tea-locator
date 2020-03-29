@@ -1,0 +1,18 @@
+body{
+    background-color:white;
+}
+
+#top-banner{
+    background-image:url(image/diffbrandofbbt.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-position-y: 85%;
+}
+
+#bannertext{
+    background-color:rgba(255, 255, 255, 0.733);
+}
+
+
+
+
