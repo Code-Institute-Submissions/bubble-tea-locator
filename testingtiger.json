@@ -6,7 +6,7 @@
       "properties": {
       "name": "Tiger Sugar",
       "address":"Capitol Piazza, #B2-32 City Hall MRT station Exit D)",
-      "opening-hours":"11.30am - 10.00pm"
+      "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +21,7 @@
       "properties": {
          "name": "Tiger Sugar",
         "address":"133 New Bridge Road #B1-42 Chinatown point Exit G at Chinatown MRT station",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +36,7 @@
       "properties": {
         "name": "Tiger Sugar",
         "address":"Paragon Shopping Mall, 290 Orchard Rd, #B1-39/40",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +51,7 @@
       "properties": {
         "name": "Tiger Sugar",
         "address":"1 Jurong West Central 2, #03-40/41 Jurong Point",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +66,7 @@
       "properties": {
         "name": "Tiger Sugar",
         "address":"1 Northpoint Drive, Northpoint City South Wing, #01-153",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +81,7 @@
       "properties": {
         "name": "Tiger Sugar",
         "address":"Holland Piazza 3 Lorong Liput #B1-06",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -96,7 +96,7 @@
       "properties": {
         "name": "Tiger Sugar",
         "address":"01-455-461 North Wing, Suntec City, 3 Temasek Blvd",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
@@ -111,7 +111,7 @@
       "properties": {
 	      "name": "Tiger Sugar",
         "address":"Bedok Mall B1, 30A",
-        "opening-hours":"11.30am - 10.00pm"
+        "hour":"11.30am - 10.00pm"
       },
       "geometry": {
         "type": "Point",
