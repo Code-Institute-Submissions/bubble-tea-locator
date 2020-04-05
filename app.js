@@ -1,7 +1,7 @@
 
 $(function() {
 
-    let map = createMap("map", [1.3521, 103.8198], 13);
+    let map = createMap("map", [1.3521, 103.8198], 12);
 
     let promise = [axios.get('testingtiger.geojson'),axios.get('xinfutang.geojson')];
     axios.all(promise).then(axios.spread(function(tiger,xinfutang){
@@ -33,17 +33,32 @@ $(function() {
 
         let bbtLayers = {
             'Tiger Sugar':tigerGroup,
-            'Xinfutang':xinfutangGroup
+            'Xinfutang':xinfutangGroup,
+            
         }
 
         let control = L.control.layers(bbtLayers).addTo(map);
         map.addControl(control);
 
-    
+        $("#reset").click(function(){
+            if(map.hasLayer(tigerGroup)){
+                map.addLayer(xinfutangGroup)
+                map.closePopup();
+            } else if(map.hasLayer(xinfutangGroup)){
+                map.addLayer(tigerGroup)
+                map.closePopup();
+                
+
+            } 
+        })
 
 
 
     }))
+
     
 })
+
+
+
 

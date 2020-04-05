@@ -1,5 +1,5 @@
 function createMap(container, initialCoordinates, zoomLevel) {
-  let map = L.map(container); // create leaflet map and store the resultant object inside the map variable
+  let map = L.map(container); 
   map.setView(initialCoordinates, zoomLevel);
 
   let layer = L.tileLayer(
