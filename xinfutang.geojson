@@ -1,0 +1,125 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Century Square #01-22 2 Tampines Central 5",
+				"hour": "11am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9439,
+					1.3524
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Takashimaya Food Village B2,391 Orchard Road",
+				"hour": "10am - 9.30pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8346,
+					1.3026
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Compass One #B1-10 1 Sengkang Square",
+				"hour": "11am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8954,
+					1.3924
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Causeway Point #B1-K30 1 Woodlands Square",
+				"hour": "10.30am - 10.30pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.786,
+					1.436
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Hillion Mall #02-21 17 Petir Road",
+				"hour": "11am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7632,
+					1.3783
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Square 2 #02-65/66,10 Sinaran Drive",
+				"hour": "11am - 9.15pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8441,
+					1.3208
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Paya Lebar Square #01-32 60 Paya Lebar Road",
+				"hour": "11am - 10pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8926,
+					1.3192
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Xing Fu Tang",
+				"address": "Plaza Singapura #01-K1 68 Orchard Road",
+				"hour": "10am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8448,
+					1.3007
+				]
+			}
+		}
+	]
+}
