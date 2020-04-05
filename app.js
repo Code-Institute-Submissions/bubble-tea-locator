@@ -32,12 +32,15 @@ $(function() {
         map.addLayer(xinfutangGroup);
 
         let bbtLayers = {
-            'tiger':'tigerGroup',
-            'xinfutang':'xinfutangGroup'
+            'Tiger Sugar':tigerGroup,
+            'Xinfutang':xinfutangGroup
         }
 
-        L.control.layers(bbtLayers).addTo(map);
-        
+        let control = L.control.layers(bbtLayers).addTo(map);
+        map.addControl(control);
+
+    
+
 
 
     }))
