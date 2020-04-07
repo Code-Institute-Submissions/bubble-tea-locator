@@ -55,6 +55,28 @@ $(function() {
 
     }))
 
+    let clientID="TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
+    let clientSecret="WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
+
+    let apiURL="https://api.foursquare.com/v2/venues/search";
+    axios.get(apiURL,{
+        params:{
+            client_id:clientID,
+            client_secret:clientSecret,
+            near:'Singapore',
+            intent:'browse',
+            v:"20200408",
+            categoryId:"52e81612bcbc57f1066b7a0c"
+
+        }
+    }).then(function(response){
+        let venues = response.data.response.venues;
+        for(let v of venues){
+            let bbmarker=L.marker([v.location.lat,v.location.lng]);
+            bbmarker.bindPopup(`<p>${v.name}</p>`);
+            bbmarker.addTo(map);
+        }
+    })
     
 })
 
