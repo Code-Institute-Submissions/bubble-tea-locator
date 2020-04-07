@@ -59,6 +59,7 @@ $(function() {
     let clientSecret="WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
 
     let apiURL="https://api.foursquare.com/v2/venues/search";
+    let venueURL="https://api.foursquare.com/v2/venues/";
     axios.get(apiURL,{
         params:{
             client_id:clientID,
@@ -74,6 +75,18 @@ $(function() {
         for(let v of venues){
             let bbmarker=L.marker([v.location.lat,v.location.lng]);
             bbmarker.bindPopup(`<p>${v.name}</p>`);
+            bbmarker.on('click',function(e){
+                axios.get(venueURL+v.id,{params:{
+                    client_id:clientID,
+                    client_secret:clientSecret,
+                    v:"20200804"
+                }
+                }).then(function(detail){
+                    $('#venuedetail').text(detail.data.response.venue.name)
+                })
+            })
+
+            
             bbmarker.addTo(map);
         }
     })
