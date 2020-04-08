@@ -13,6 +13,11 @@ $(function() {
              marker.bindPopup(`<table><tr><th>Name:</th><td>${t.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${t.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${t.properties.hour}</td></tr></table>`);
+             marker.on('click',function(){
+                $('#venuedetail').text(`Name: ${t.properties.name}`)
+                $('#venueaddress').text(`Address: ${t.properties.address}`)
+
+             })
              tigerGroup.addLayer(marker);
         }
         
@@ -24,6 +29,11 @@ $(function() {
              marker.bindPopup(`<table><tr><th>Name:</th><td>${x.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${x.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${x.properties.hour}</td></tr></table>`);
+            marker.on('click',function(){
+                $('#venuedetail').text(`Name: ${x.properties.name}`)
+                $('#venueaddress').text(`Address: ${x.properties.address}`)
+
+             })
              xinfutangGroup.addLayer(marker);
         }
 
@@ -55,11 +65,12 @@ $(function() {
 
     }))
 
-    let clientID="TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
-    let clientSecret="WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
+    let clientID="CDFVB3SURCZJXSPXHG3T253BMK1ORA2WBFJIFMHXLYC2HGUF";
+    let clientSecret="ZHLZQQ11MP5AZW1TPND2E01CYGECL2MCDJAMCUHBRDU0S1HS";
 
     let apiURL="https://api.foursquare.com/v2/venues/search";
     let venueURL="https://api.foursquare.com/v2/venues/";
+
     axios.get(apiURL,{
         params:{
             client_id:clientID,
@@ -72,17 +83,22 @@ $(function() {
         }
     }).then(function(response){
         let venues = response.data.response.venues;
-        for(let v of venues){
-            let bbmarker=L.marker([v.location.lat,v.location.lng]);
-            bbmarker.bindPopup(`<p>${v.name}</p>`);
-            bbmarker.on('click',function(e){
-                axios.get(venueURL+v.id,{params:{
+        for(let place of venues){
+            let bbmarker=L.marker([place.location.lat,place.location.lng]);
+            bbmarker.bindPopup(`<table><tr><th>Name:</th><td>${place.name}</td></tr>
+                                <tr><th>Address:</th><td>${place.location.formattedAddress}</td></table>`);
+            bbmarker.on('click',function(){
+                axios.get(venueURL+place.id,{params:{
                     client_id:clientID,
                     client_secret:clientSecret,
                     v:"20200804"
+                    
                 }
                 }).then(function(detail){
                     $('#venuedetail').text(detail.data.response.venue.name)
+                    $('#venueaddress').text(detail.data.response.venue.location.formattedAddress)
+
+                   
                 })
             })
 
