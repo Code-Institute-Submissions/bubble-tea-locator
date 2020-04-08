@@ -16,6 +16,7 @@ $(function() {
              marker.on('click',function(){
                 $('#venuedetail').text(`Name: ${t.properties.name}`)
                 $('#venueaddress').text(`Address: ${t.properties.address}`)
+                $('#venuehour').text(`Opening-Hour: ${t.properties.hour}`)
 
              })
              tigerGroup.addLayer(marker);
@@ -32,6 +33,7 @@ $(function() {
             marker.on('click',function(){
                 $('#venuedetail').text(`Name: ${x.properties.name}`)
                 $('#venueaddress').text(`Address: ${x.properties.address}`)
+                $('#venuehour').text(`Opening-Hour: ${x.properties.hour}`)
 
              })
              xinfutangGroup.addLayer(marker);
@@ -65,8 +67,8 @@ $(function() {
 
     }))
 
-    let clientID="CDFVB3SURCZJXSPXHG3T253BMK1ORA2WBFJIFMHXLYC2HGUF";
-    let clientSecret="ZHLZQQ11MP5AZW1TPND2E01CYGECL2MCDJAMCUHBRDU0S1HS";
+    let clientID="TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
+    let clientSecret="WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
 
     let apiURL="https://api.foursquare.com/v2/venues/search";
     let venueURL="https://api.foursquare.com/v2/venues/";
@@ -86,17 +88,17 @@ $(function() {
         for(let place of venues){
             let bbmarker=L.marker([place.location.lat,place.location.lng]);
             bbmarker.bindPopup(`<table><tr><th>Name:</th><td>${place.name}</td></tr>
-                                <tr><th>Address:</th><td>${place.location.formattedAddress}</td></table>`);
+                                <tr><th>Address:</th><td>${place.location.address}</td></table>`);
             bbmarker.on('click',function(){
                 axios.get(venueURL+place.id,{params:{
                     client_id:clientID,
                     client_secret:clientSecret,
-                    v:"20200804"
+                    v:"20200409"
                     
                 }
                 }).then(function(detail){
                     $('#venuedetail').text(detail.data.response.venue.name)
-                    $('#venueaddress').text(detail.data.response.venue.location.formattedAddress)
+                    $('#venueaddress').text(detail.data.response.venue.location.address)
 
                    
                 })
