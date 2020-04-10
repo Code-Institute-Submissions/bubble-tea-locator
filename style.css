@@ -2,22 +2,17 @@ body{
     background-image: url(image/bbtbackground.jpg);
 }
 
-.container{
+#content{
     width: 100%;
-    height: 650px;
-    position: relative;
-    display:flex;
-    margin-left:180px;
-    border: 1px solid black;
+    height:500px;
+    margin-top:30px;
     
 }
-
-
 
 #map {
     width: 100%;
     height: 100%;
-    background-color: black;
+    
     
 }
 
@@ -28,5 +23,8 @@ body{
 
 #sidebar{
     background-color:white;
-    width:70%;
+}
+
+#sidebar>div{
+    text-align: center;  
 }

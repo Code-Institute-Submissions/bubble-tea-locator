@@ -26,27 +26,34 @@ $(function() {
         for (let x of xinfutang.data.features){
              let lat = x.geometry.coordinates[1];
              let lng = x.geometry.coordinates[0];
+             let closingin=(lat,lng);
              let marker = L.marker([lat,lng]);
              marker.bindPopup(`<table><tr><th>Name:</th><td>${x.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${x.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${x.properties.hour}</td></tr></table>`);
             marker.on('click',function(){
-                $('#venuedetail').text(`Name: ${x.properties.name}`)
-                $('#venueaddress').text(`Address: ${x.properties.address}`)
+                $('#venuedetail').text(`Name: ${x.properties.name}`);
+                $('#venueaddress').text(`Address: ${x.properties.address}`);
                 $('#venuehour').text(`Opening-Hour: ${x.properties.hour}`)
-
+                
              })
+
              xinfutangGroup.addLayer(marker);
+            
+             
         }
 
         map.addLayer(tigerGroup);
         map.addLayer(xinfutangGroup);
+        
 
         let bbtLayers = {
             'Tiger Sugar':tigerGroup,
             'Xinfutang':xinfutangGroup,
             
         }
+
+    
 
         let control = L.control.layers(bbtLayers).addTo(map);
         map.addControl(control);
@@ -80,15 +87,18 @@ $(function() {
             near:'Singapore',
             intent:'browse',
             v:"20200408",
-            categoryId:"52e81612bcbc57f1066b7a0c"
+            categoryId:"4bf58dd8d48988d1fd941735"
 
         }
     }).then(function(response){
         let venues = response.data.response.venues;
         for(let place of venues){
-            let bbmarker=L.marker([place.location.lat,place.location.lng]);
-            bbmarker.bindPopup(`<table><tr><th>Name:</th><td>${place.name}</td></tr>
-                                <tr><th>Address:</th><td>${place.location.address}</td></table>`);
+            let bbmarker=L.circle([place.location.lat,place.location.lng],{
+                    radius:200,
+                    color:'red'
+            });
+            bbmarker.bindPopup(`<table><tr><th>Name: </th><td>${place.name}</td></tr>
+                                <tr><th>Address: </th><td>${place.location.address}</td></table>`);
             bbmarker.on('click',function(){
                 axios.get(venueURL+place.id,{params:{
                     client_id:clientID,
@@ -97,8 +107,8 @@ $(function() {
                     
                 }
                 }).then(function(detail){
-                    $('#venuedetail').text(detail.data.response.venue.name)
-                    $('#venueaddress').text(detail.data.response.venue.location.address)
+                    $('#venuedetail').text(`Name: ${detail.data.response.venue.name}`)
+                    $('#venueaddress').text(`Address: ${detail.data.response.venue.location.address}`)
 
                    
                 })
@@ -106,10 +116,27 @@ $(function() {
 
             
             bbmarker.addTo(map);
+
+            $("#shopping").click(function(){
+            if(map.hasLayer(tigerGroup)){
+                map.addLayer(xinfutangGroup)
+                map.closePopup();
+            } else if(map.hasLayer(xinfutangGroup)){
+                map.addLayer(tigerGroup)
+                map.closePopup();
+                
+
+            } 
+        })
+
+
         }
     })
+
+    
     
 })
+
 
 
 
