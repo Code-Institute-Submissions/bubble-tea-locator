@@ -115,15 +115,13 @@ $(function() {
             })
 
             
-            bbmarker.addTo(map);
+            
 
             $("#shopping").click(function(){
-            if(map.hasLayer(tigerGroup)){
-                map.addLayer(xinfutangGroup)
-                map.closePopup();
-            } else if(map.hasLayer(xinfutangGroup)){
-                map.addLayer(tigerGroup)
-                map.closePopup();
+            if(map.hasLayer(bbmarker)){
+               map.removeLayer(bbmarker)
+            } else{
+                bbmarker.addTo(map);
                 
 
             } 
