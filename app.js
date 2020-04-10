@@ -70,6 +70,7 @@ $(function() {
         let bbtLayers = {
             'Tiger Sugar':tigerGroup,
             'Xinfutang':xinfutangGroup,
+            'Koi':koiGroup,
             
         }
 
@@ -79,17 +80,23 @@ $(function() {
         map.addControl(control);
 
         $("#reset").click(function(){
-            if(map.hasLayer(tigerGroup) && map.hasLayer(xinfutangGroup)){
+            if(map.hasLayer(tigerGroup) && map.hasLayer(xinfutangGroup) && map.hasLayer(koiGroup)){
                 map.removeLayer(tigerGroup)
                 map.removeLayer(xinfutangGroup)
+                map.removeLayer(koiGroup)
             }
             if(map.hasLayer(tigerGroup)){
                 map.addLayer(xinfutangGroup)
+                map.addLayer(koiGroup)
                 map.closePopup();
             } else if(map.hasLayer(xinfutangGroup)){
                 map.addLayer(tigerGroup)
+                map.addLayer(koiGroup)
                 map.closePopup();
-                
+            } else if(map.hasLayer(koiGroup)){
+                map.addLayer(xinfutangGroup)
+                map.addLayer(tigerGroup)
+                map.closePopup();
             } 
         })
 
