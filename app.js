@@ -2,8 +2,8 @@ $(function() {
 
     let map = createMap("map", [1.3521, 103.8198], 12);
 
-    let promise = [axios.get('testingtiger.geojson'),axios.get('xinfutang.geojson')];
-    axios.all(promise).then(axios.spread(function(tiger,xinfutang){
+    let promise = [axios.get('Data/testingtiger.geojson'),axios.get('Data/xinfutang.geojson'),axios.get('Data/koi.geojson')];
+    axios.all(promise).then(axios.spread(function(tiger,xinfutang,koi){
         
         let tigerGroup = L.layerGroup();
         for (let t of tiger.data.features){
@@ -26,7 +26,6 @@ $(function() {
         for (let x of xinfutang.data.features){
              let lat = x.geometry.coordinates[1];
              let lng = x.geometry.coordinates[0];
-             let closingin=(lat,lng);
              let marker = L.marker([lat,lng]);
              marker.bindPopup(`<table><tr><th>Name:</th><td>${x.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${x.properties.address}</td></tr>
@@ -43,8 +42,29 @@ $(function() {
              
         }
 
+        let koiGroup = L.layerGroup();
+        for (let k of koi.data.features){
+             let lat = k.geometry.coordinates[1];
+             let lng = k.geometry.coordinates[0];
+             let marker = L.marker([lat,lng]);
+             marker.bindPopup(`<table><tr><th>Name:</th><td>${k.properties.name}</td></tr>
+                                <tr><th>Address:</th><td>${k.properties.address}</td></tr>
+                                <tr><th>Opening-hours:</th><td>${k.properties.hour}</td></tr></table>`);
+            marker.on('click',function(){
+                $('#venuedetail').text(`Name: ${k.properties.name}`);
+                $('#venueaddress').text(`Address: ${k.properties.address}`);
+                $('#venuehour').text(`Opening-Hour: ${k.properties.hour}`)
+                
+             })
+
+             koiGroup.addLayer(marker);
+            
+             
+        }
+
         map.addLayer(tigerGroup);
         map.addLayer(xinfutangGroup);
+        map.addLayer(koiGroup);
         
 
         let bbtLayers = {
@@ -59,6 +79,10 @@ $(function() {
         map.addControl(control);
 
         $("#reset").click(function(){
+            if(map.hasLayer(tigerGroup) && map.hasLayer(xinfutangGroup)){
+                map.removeLayer(tigerGroup)
+                map.removeLayer(xinfutangGroup)
+            }
             if(map.hasLayer(tigerGroup)){
                 map.addLayer(xinfutangGroup)
                 map.closePopup();
@@ -66,7 +90,6 @@ $(function() {
                 map.addLayer(tigerGroup)
                 map.closePopup();
                 
-
             } 
         })
 
