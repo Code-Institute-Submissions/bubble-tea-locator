@@ -1,1 +1,770 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"KOI","address":"10 Paya Lebar Road #B1-02, Paya Lebar Quarter","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8937,1.3181]}},{"type":"Feature","properties":{"name":"KOI","address":"Blk 1 Tanjong Pagar Plaza, #01-38","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8426,1.2749]}},{"type":"Feature","properties":{"name":"KOI","address":"2 Jurong East Central 1, #01-03 JCube","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7403,1.3331]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Pasir Ris Close #01-341, Downtown East","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9549,1.3776]}},{"type":"Feature","properties":{"name":"KOI","address":"180A Orchard Road, Peranakan Place","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8392,1.3015]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Kim Seng Promenade, #01-125 Great World City","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8319,1.2936]}},{"type":"Feature","properties":{"name":"KOI","address":"Junction 8 Shopping Centre, 9 Bishan Place, #02-26","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8488,1.3507]}},{"type":"Feature","properties":{"name":"KOI","address":"68 Orchard Road #B2-11 Plaza Singapura","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8448,1.3007]}},{"type":"Feature","properties":{"name":"KOI","address":"53 Ang Mo Kio Ave 3 #01-44","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8484,1.3695]}},{"type":"Feature","properties":{"name":"KOI","address":"30 Sembawang Drive #02-09 Sun Plaza","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8197,1.4483]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Northpoint Drive, South Wing of Northpoint City #B2-157","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8364,1.428]}},{"type":"Feature","properties":{"name":"KOI","address":"302 Tiong Bahru Road #01-155","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8271,1.2865]}},{"type":"Feature","properties":{"name":"KOI","address":"391 Orchard Road #B2-37C, Takashimaya Shopping Centre, Ngee Ann City","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8346,1.3026]}},{"type":"Feature","properties":{"name":"KOI","address":"10 Jurong East Street 12, #01-09","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7421,1.3331]}},{"type":"Feature","properties":{"name":"KOI","address":"252 North Bridge Road #B1-71,Raffles City Shopping Centre","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8513,1.283]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Maritime Square #01-67A, Harbourfront Centre","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8203,1.2645]}},{"type":"Feature","properties":{"name":"KOI","address":"4 Tampines Central 5 #02-K3B, Tampines Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9447,1.3525]}},{"type":"Feature","properties":{"name":"KOI","address":"238 Thomson Road #01-61, Novena Square","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8439,1.3209]}},{"type":"Feature","properties":{"name":"KOI","address":"10 Choa Chu Kang Avenue 4 #01-04, Choa Chu Kang MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7443,1.3854]}},{"type":"Feature","properties":{"name":"KOI","address":"17 Petir Road #B2-53, Hillion Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.763,1.378]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Jurong West Central 2 #02-41C, Jurong Point","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7067,1.3397]}},{"type":"Feature","properties":{"name":"KOI","address":"11 Collyer Quay #01-12, The Arcade","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8519,1.2839]}},{"type":"Feature","properties":{"name":"KOI","address":"30 Woodlands Avenue 2 #01-16, Woodlands MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7864,1.4369]}},{"type":"Feature","properties":{"name":"KOI","address":"3 Simei Street 6 #01-08, Eastpoint Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.953,1.3427]}},{"type":"Feature","properties":{"name":"KOI","address":"133 New Bridge Road #01-39, Chinatown Point","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8448,1.2815]}},{"type":"Feature","properties":{"name":"KOI","address":"83 Punggol Central #B1-K2, Waterway Point ","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9022,1.4067]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Pasir Ris Central St.3 #01-32, White Sands mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9497,1.3724]}},{"type":"Feature","properties":{"name":"KOI","address":"20 Tampines Central 1 #01-08, Tampines MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9433,1.3544]}},{"type":"Feature","properties":{"name":"KOI","address":"61 Choa Chu Kang Drive #01-03, Yew Tee MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7475,1.3973]}},{"type":"Feature","properties":{"name":"KOI","address":"2 Orchard Turn # B4-35, ION Orchard","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.832,1.304]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Raffles Link #B1-66, CityLink Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8552,1.2913]}},{"type":"Feature","properties":{"name":"KOI","address":"33 Sengkang West Ave #B1-K6, Seletar Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8761,1.3915]}},{"type":"Feature","properties":{"name":"KOI","address":"10 Bukit Batok Central #01-07, Bukit Batok MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7496,1.3491]}},{"type":"Feature","properties":{"name":"KOI","address":"200 Bishan Road #01-05, Bishan MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8482,1.3508]}},{"type":"Feature","properties":{"name":"KOI","address":"2450 Ang Mo Kio Ave8 #01-05, Ang Mo Kio MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8496,1.37]}},{"type":"Feature","properties":{"name":"KOI","address":"90 Hougang Ave 10, #01-15,Hougang Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8937,1.3726]}},{"type":"Feature","properties":{"name":"KOI","address":"301 Boon Lay way #01-34, Boon Lay MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7058,1.3386]}},{"type":"Feature","properties":{"name":"KOI","address":"5 Changi Business Park Central 1 #B1-18, Changi City Point","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9832,1.345]}},{"type":"Feature","properties":{"name":"KOI","address":"180 Kitchener Road #B1-K6, City Square Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8567,1.3112]}},{"type":"Feature","properties":{"name":"KOI","address":"23 Serangoon Central #B1-07, NEX Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8723,1.3508]}},{"type":"Feature","properties":{"name":"KOI","address":"65 Airport Boulevard #B2-12, Changi Airport Terminal 3","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9865,1.3563]}},{"type":"Feature","properties":{"name":"KOI","address":"313 Orchard Rd #B3-51, 313@Somerset","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8384,1.3009]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Harbourfront Walk #B2-06B, VivoCity","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8222,1.2644]}},{"type":"Feature","properties":{"name":"KOI","address":"9 Raffles Boulevard #01-85, Millenia Walk","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8598,1.2928]}},{"type":"Feature","properties":{"name":"KOI","address":"100 North Buona Vista Road #1-02/03, Buona Vista MRT","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7901,1.3073]}},{"type":"Feature","properties":{"name":"KOI","address":"51 Yishun Central 1 #01-02, Yishun 10 Multiplex","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8364,1.43]}},{"type":"Feature","properties":{"name":"KOI","address":"3 Gateway Drive #B1-27, Westgate","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.7428,1.3345]}},{"type":"Feature","properties":{"name":"KOI","address":"304 Orchard Road #01-15, Lucky Plaza","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8339,1.3045]}},{"type":"Feature","properties":{"name":"KOI","address":"1 Sengkang Square #01-19, Compass One Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8954,1.3924]}},{"type":"Feature","properties":{"name":"KOI","address":"311 New Upper Changi Road #01-97, Bedok Mall","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.9297,1.3246]}},{"type":"Feature","properties":{"name":"KOI","address":"201 Victoria Street #01-01 Bugis+","hour":"10.00am - 10.00pm"},"geometry":{"type":"Point","coordinates":[103.8542,1.2996]}}]}
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "10 Paya Lebar Road #B1-02, Paya Lebar Quarter",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8937,
+					1.3181
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "Blk 1 Tanjong Pagar Plaza, #01-38",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8426,
+					1.2749
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "2 Jurong East Central 1, #01-03 JCube",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7403,
+					1.3331
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Pasir Ris Close #01-341, Downtown East",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9549,
+					1.3776
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "180A Orchard Road, Peranakan Place",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8392,
+					1.3015
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Kim Seng Promenade, #01-125 Great World City",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8319,
+					1.2936
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "Junction 8 Shopping Centre, 9 Bishan Place, #02-26",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8488,
+					1.3507
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "68 Orchard Road #B2-11 Plaza Singapura",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8448,
+					1.3007
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "53 Ang Mo Kio Ave 3 #01-44",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8484,
+					1.3695
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "30 Sembawang Drive #02-09 Sun Plaza",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8197,
+					1.4483
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Northpoint Drive, South Wing of Northpoint City #B2-157",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8364,
+					1.428
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "302 Tiong Bahru Road #01-155",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8271,
+					1.2865
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "391 Orchard Road #B2-37C, Takashimaya Shopping Centre, Ngee Ann City",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8346,
+					1.3026
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "10 Jurong East Street 12, #01-09",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7421,
+					1.3331
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "252 North Bridge Road #B1-71,Raffles City Shopping Centre",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8513,
+					1.283
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Maritime Square #01-67A, Harbourfront Centre",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8203,
+					1.2645
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "4 Tampines Central 5 #02-K3B, Tampines Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9447,
+					1.3525
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "238 Thomson Road #01-61, Novena Square",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8439,
+					1.3209
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "10 Choa Chu Kang Avenue 4 #01-04, Choa Chu Kang MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7443,
+					1.3854
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "17 Petir Road #B2-53, Hillion Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.763,
+					1.378
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Jurong West Central 2 #02-41C, Jurong Point",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7067,
+					1.3397
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "11 Collyer Quay #01-12, The Arcade",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8519,
+					1.2839
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "30 Woodlands Avenue 2 #01-16, Woodlands MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7864,
+					1.4369
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "3 Simei Street 6 #01-08, Eastpoint Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.953,
+					1.3427
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "133 New Bridge Road #01-39, Chinatown Point",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8448,
+					1.2815
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "83 Punggol Central #B1-K2, Waterway Point ",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9022,
+					1.4067
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Pasir Ris Central St.3 #01-32, White Sands mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9497,
+					1.3724
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "20 Tampines Central 1 #01-08, Tampines MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9433,
+					1.3544
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "61 Choa Chu Kang Drive #01-03, Yew Tee MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7475,
+					1.3973
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "2 Orchard Turn # B4-35, ION Orchard",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.832,
+					1.304
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Raffles Link #B1-66, CityLink Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8552,
+					1.2913
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "33 Sengkang West Ave #B1-K6, Seletar Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8761,
+					1.3915
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "10 Bukit Batok Central #01-07, Bukit Batok MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7496,
+					1.3491
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "200 Bishan Road #01-05, Bishan MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8482,
+					1.3508
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "2450 Ang Mo Kio Ave8 #01-05, Ang Mo Kio MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8496,
+					1.37
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "90 Hougang Ave 10, #01-15,Hougang Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8937,
+					1.3726
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "301 Boon Lay way #01-34, Boon Lay MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7058,
+					1.3386
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "5 Changi Business Park Central 1 #B1-18, Changi City Point",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9620,
+					1.3332
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "180 Kitchener Road #B1-K6, City Square Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8567,
+					1.3112
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "23 Serangoon Central #B1-07, NEX Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8723,
+					1.3508
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "65 Airport Boulevard #B2-12, Changi Airport Terminal 3",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9865,
+					1.3563
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "313 Orchard Rd #B3-51, 313@Somerset",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8384,
+					1.3009
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Harbourfront Walk #B2-06B, VivoCity",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8222,
+					1.2644
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "9 Raffles Boulevard #01-85, Millenia Walk",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8598,
+					1.2928
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "100 North Buona Vista Road #1-02/03, Buona Vista MRT",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7901,
+					1.3073
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "51 Yishun Central 1 #01-02, Yishun 10 Multiplex",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8364,
+					1.43
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "3 Gateway Drive #B1-27, Westgate",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7428,
+					1.3345
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "304 Orchard Road #01-15, Lucky Plaza",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8339,
+					1.3045
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "1 Sengkang Square #01-19, Compass One Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8954,
+					1.3924
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "311 New Upper Changi Road #01-97, Bedok Mall",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.9297,
+					1.3246
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "KOI",
+				"address": "201 Victoria Street #01-01 Bugis+",
+				"hour": "10.00am - 10.00pm"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.8542,
+					1.2996
+				]
+			}
+		}
+	]
+}

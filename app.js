@@ -2,8 +2,8 @@ $(function() {
 
     let map = createMap("map", [1.3521, 103.8198], 12);
 
-    let promise = [axios.get('Data/testingtiger.geojson'),axios.get('Data/xinfutang.geojson'),axios.get('Data/koi.geojson')];
-    axios.all(promise).then(axios.spread(function(tiger,xinfutang,koi){
+    let promise = [axios.get('Data/testingtiger.geojson'),axios.get('Data/xinfutang.geojson'),axios.get('Data/koi.geojson'),axios.get('Data/thealley.geojson')];
+    axios.all(promise).then(axios.spread(function(tiger,xinfutang,koi,thealley){
         
         let tigerGroup = L.layerGroup();
         for (let t of tiger.data.features){
@@ -62,15 +62,34 @@ $(function() {
              
         }
 
+        let alleyGroup = L.layerGroup();
+        for (let a of thealley.data.features){
+             let lat = a.geometry.coordinates[1];
+             let lng = a.geometry.coordinates[0];
+             let marker = L.marker([lat,lng]);
+             marker.bindPopup(`<table><tr><th>Name:</th><td>${a.properties.name}</td></tr>
+                                <tr><th>Address:</th><td>${a.properties.address}</td></tr>
+                                <tr><th>Opening-hours:</th><td>${a.properties.hour}</td></tr></table>`);
+             marker.on('click',function(){
+                $('#venuedetail').text(`Name: ${a.properties.name}`)
+                $('#venueaddress').text(`Address: ${a.properties.address}`)
+                $('#venuehour').text(`Opening-Hour: ${a.properties.hour}`)
+
+             })
+             alleyGroup.addLayer(marker);
+        }
+
         map.addLayer(tigerGroup);
         map.addLayer(xinfutangGroup);
         map.addLayer(koiGroup);
+        map.addLayer(alleyGroup);
         
 
         let bbtLayers = {
             'Tiger Sugar':tigerGroup,
             'Xinfutang':xinfutangGroup,
             'Koi':koiGroup,
+            'The Alley':alleyGroup,
             
         }
 
@@ -80,24 +99,39 @@ $(function() {
         map.addControl(control);
 
         $("#reset").click(function(){
-            if(map.hasLayer(tigerGroup) && map.hasLayer(xinfutangGroup) && map.hasLayer(koiGroup)){
+            if(map.hasLayer(tigerGroup)){
+                map.addLayer(xinfutangGroup);
+                map.addLayer(koiGroup);
+                map.addLayer(alleyGroup);
+                map.closePopup();
+            } else if(map.hasLayer(xinfutangGroup)){
+                map.addLayer(tigerGroup);
+                map.addLayer(koiGroup);
+                map.addLayer(alleyGroup);
+                map.closePopup();
+            } else if(map.hasLayer(koiGroup)){
+                map.addLayer(xinfutangGroup);
+                map.addLayer(tigerGroup);
+                map.addLayer(alleyGroup);
+                map.closePopup();
+            } else if(map.hasLayer(alleyGroup)){
+                map.addLayer(xinfutangGroup);
+                map.addLayer(tigerGroup);
+                map.addLayer(koiGroup);
+            } else{
+                map.addLayer(tigerGroup);
+                map.addLayer(xinfutangGroup);
+                map.addLayer(koiGroup);
+                map.addLayer(alleyGroup);
+            }
+        })
+
+        $("#Removebbmarker").click(function(){
                 map.removeLayer(tigerGroup)
                 map.removeLayer(xinfutangGroup)
                 map.removeLayer(koiGroup)
-            }
-            if(map.hasLayer(tigerGroup)){
-                map.addLayer(xinfutangGroup)
-                map.addLayer(koiGroup)
-                map.closePopup();
-            } else if(map.hasLayer(xinfutangGroup)){
-                map.addLayer(tigerGroup)
-                map.addLayer(koiGroup)
-                map.closePopup();
-            } else if(map.hasLayer(koiGroup)){
-                map.addLayer(xinfutangGroup)
-                map.addLayer(tigerGroup)
-                map.closePopup();
-            } 
+                 map.removeLayer(alleyGroup)
+            
         })
 
 
