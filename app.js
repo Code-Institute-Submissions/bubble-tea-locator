@@ -9,7 +9,7 @@ $(function() {
         for (let t of tiger.data.features){
              let lat = t.geometry.coordinates[1];
              let lng = t.geometry.coordinates[0];
-             let marker = L.marker([lat,lng]);
+             let marker = L.marker([lat,lng],{icon:tigerIcon});
              marker.bindPopup(`<table><tr><th>Name:</th><td>${t.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${t.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${t.properties.hour}</td></tr></table>`);
@@ -27,7 +27,7 @@ $(function() {
         for (let x of xinfutang.data.features){
              let lat = x.geometry.coordinates[1];
              let lng = x.geometry.coordinates[0];
-             let marker = L.marker([lat,lng]);
+             let marker = L.marker([lat,lng],{icon:xftIcon});
              marker.bindPopup(`<table><tr><th>Name:</th><td>${x.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${x.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${x.properties.hour}</td></tr></table>`);
@@ -48,7 +48,7 @@ $(function() {
         for (let k of koi.data.features){
              let lat = k.geometry.coordinates[1];
              let lng = k.geometry.coordinates[0];
-             let marker = L.marker([lat,lng]);
+             let marker = L.marker([lat,lng],{icon:koiIcon});
              marker.bindPopup(`<table><tr><th>Name:</th><td>${k.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${k.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${k.properties.hour}</td></tr></table>`);
@@ -147,6 +147,18 @@ $(function() {
 
 
     }))
+
+    let bubbleIcon = L.Icon.extend({
+        options:{
+            iconSize: [50,100],
+            iconAnchor: [22, 94],
+            popupAnchor: [-3, -76]
+        }
+    });
+
+    let tigerIcon = new bubbleIcon({iconUrl:'image/tiger.png'}),
+        koiIcon= new bubbleIcon({iconUrl:'image/koilogo.png'}),
+        xftIcon= new bubbleIcon({iconUrl:'image/xftlogo.png'})
 
     let clientID="TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
     let clientSecret="WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
