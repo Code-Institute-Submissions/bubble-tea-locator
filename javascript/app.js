@@ -102,6 +102,7 @@ $(function () {
         let control = L.control.layers(bbtLayers).addTo(map);
         map.addControl(control);
 
+        // To Reset The Map
         $("#reset").click(function () {
             map.addLayer(tigerGroup);
             map.addLayer(xinfutangGroup);
@@ -110,7 +111,7 @@ $(function () {
             map.setView([1.3521, 103.8198], 11)
 
         })
-
+        // To Remove all marker
         $("#Removebbmarker").click(function () {
             map.removeLayer(tigerGroup)
             map.removeLayer(xinfutangGroup)
@@ -122,7 +123,7 @@ $(function () {
 
 
     }))
-
+    // changing from default icon
     let bubbleIcon = L.Icon.extend({
         options: {
             iconSize: [50, 100],
@@ -135,14 +136,16 @@ $(function () {
         koiIcon = new bubbleIcon({ iconUrl: 'image/koilogo.png' }),
         xftIcon = new bubbleIcon({ iconUrl: 'image/xftlogo.png' }),
         alleyIcon = new bubbleIcon({ iconUrl: 'image/alleylogo.png' })
-    menIcon = new bubbleIcon({ iconUrl: 'image/men.png' })
+        menIcon = new bubbleIcon({ iconUrl: 'image/men.png' })
 
+    
     let clientID = "TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
     let clientSecret = "WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
 
     let apiURL = "https://api.foursquare.com/v2/venues/search";
     let venueURL = "https://api.foursquare.com/v2/venues/";
 
+    // get all shopping mall api
     axios.get(apiURL, {
         params: {
             client_id: clientID,
@@ -181,7 +184,7 @@ $(function () {
 
 
 
-
+            // on and off shopping layer
             $("#shopping").click(function () {
                 if (map.hasLayer(bbmarker)) {
                     map.removeLayer(bbmarker)
@@ -201,10 +204,17 @@ $(function () {
 
 
 // Button to view current location
-    L.easyButton('fas fa-male', function (btn, map) {
+    L.easyButton('fas fa-male', function (btn,map) {
+        
         function onLocationFound(e) {
-            L.marker(e.latlng, { icon: menIcon }).addTo(map)
-                .bindPopup("You are Here!!").openPopup();
+            let men=L.marker(e.latlng, { icon: menIcon });
+                men.bindPopup("You are Here!!").openPopup();
+                men.addTo(map);
+                men.on('click', function () {
+                map.setView(e.latlng, 13)
+
+            })
+                
 
         }
 
@@ -216,6 +226,8 @@ $(function () {
         }
 
         map.on('locationerror', onLocationError);
+
+
 
 
 
