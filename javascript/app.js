@@ -103,37 +103,12 @@ $(function() {
         map.addControl(control);
 
         $("#reset").click(function(){
-            if(map.hasLayer(tigerGroup)){
-                map.addLayer(xinfutangGroup);
-                map.addLayer(koiGroup);
-                map.addLayer(alleyGroup);
-                map.closePopup();
-                map.setView([1.3521, 103.8198], 11)
-            } else if(map.hasLayer(xinfutangGroup)){
-                map.addLayer(tigerGroup);
-                map.addLayer(koiGroup);
-                map.addLayer(alleyGroup);
-                map.closePopup();
-                map.setView([1.3521, 103.8198], 11)
-            } else if(map.hasLayer(koiGroup)){
-                map.addLayer(xinfutangGroup);
-                map.addLayer(tigerGroup);
-                map.addLayer(alleyGroup);
-                map.setView([1.3521, 103.8198], 11)
-                map.closePopup();
-            } else if(map.hasLayer(alleyGroup)){
-                map.addLayer(xinfutangGroup);
-                map.addLayer(tigerGroup);
-                map.addLayer(koiGroup);
-                map.setView([1.3521, 103.8198], 11)
-                map.closePopup();
-            } else{
                 map.addLayer(tigerGroup);
                 map.addLayer(xinfutangGroup);
                 map.addLayer(koiGroup);
                 map.addLayer(alleyGroup);
                 map.setView([1.3521, 103.8198], 11)
-            }
+            
         })
 
         $("#Removebbmarker").click(function(){
@@ -218,6 +193,12 @@ $(function() {
 
         }
     })
+
+    window.alert("Hello!!!\nWelcome to the Bubble Tea Store Locator");
+
+    L.easyButton('fas fa-male', function(){
+    window.alert("hello")
+        }).addTo(map);
 
     
     
