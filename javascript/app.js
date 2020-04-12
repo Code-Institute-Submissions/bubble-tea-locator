@@ -137,9 +137,9 @@ $(function () {
         koiIcon = new bubbleIcon({ iconUrl: 'image/koilogo.png' }),
         xftIcon = new bubbleIcon({ iconUrl: 'image/xftlogo.png' }),
         alleyIcon = new bubbleIcon({ iconUrl: 'image/alleylogo.png' })
-        menIcon = new bubbleIcon({ iconUrl: 'image/men.png' })
+    menIcon = new bubbleIcon({ iconUrl: 'image/men.png' })
 
-    
+
     let clientID = "TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
     let clientSecret = "WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
 
@@ -204,18 +204,18 @@ $(function () {
     window.alert("Hello!!!\nWelcome to the Bubble Tea Store Locator");
 
 
-// Button to view current location
-    L.easyButton('fas fa-male', function (btn,map) {
-        
+    // Button to view current location
+    L.easyButton('fas fa-male', function (btn, map) {
+
         function onLocationFound(e) {
-            let men=L.marker(e.latlng, { icon: menIcon });
-                men.bindPopup("You are Here!!").openPopup();
-                men.addTo(map);
-                men.on('click', function () {
+            let men = L.marker(e.latlng, { icon: menIcon });
+            men.bindPopup("You are Here!!").openPopup();
+            men.addTo(map);
+            men.on('click', function () {
                 map.setView(e.latlng, 13)
 
             })
-                
+
 
         }
 
