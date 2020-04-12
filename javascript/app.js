@@ -108,7 +108,8 @@ $(function () {
             map.addLayer(xinfutangGroup);
             map.addLayer(koiGroup);
             map.addLayer(alleyGroup);
-            map.setView([1.3521, 103.8198], 11)
+            map.setView([1.3521, 103.8198], 11);
+            map.closePopup();
 
         })
         // To Remove all marker
