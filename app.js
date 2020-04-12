@@ -1,6 +1,6 @@
 $(function() {
 
-    let map = createMap("map", [1.3521, 103.8198], 12);
+    let map = createMap("map", [1.3521, 103.8198], 11);
 
     let promise = [axios.get('Data/testingtiger.geojson'),axios.get('Data/xinfutang.geojson'),axios.get('Data/koi.geojson'),axios.get('Data/thealley.geojson')];
     axios.all(promise).then(axios.spread(function(tiger,xinfutang,koi,thealley){
@@ -14,9 +14,10 @@ $(function() {
                                 <tr><th>Address:</th><td>${t.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${t.properties.hour}</td></tr></table>`);
              marker.on('click',function(){
-                $('#venuedetail').text(`Name: ${t.properties.name}`)
+                $('#venuedetail').text(t.properties.name)
                 $('#venueaddress').text(`Address: ${t.properties.address}`)
                 $('#venuehour').text(`Opening-Hour: ${t.properties.hour}`)
+                map.setView([lat, lng], 20)
 
              })
              tigerGroup.addLayer(marker);
@@ -31,9 +32,10 @@ $(function() {
                                 <tr><th>Address:</th><td>${x.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${x.properties.hour}</td></tr></table>`);
             marker.on('click',function(){
-                $('#venuedetail').text(`Name: ${x.properties.name}`);
+                $('#venuedetail').text(x.properties.name);
                 $('#venueaddress').text(`Address: ${x.properties.address}`);
                 $('#venuehour').text(`Opening-Hour: ${x.properties.hour}`)
+                map.setView([lat, lng], 20)
                 
              })
 
@@ -51,9 +53,10 @@ $(function() {
                                 <tr><th>Address:</th><td>${k.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${k.properties.hour}</td></tr></table>`);
             marker.on('click',function(){
-                $('#venuedetail').text(`Name: ${k.properties.name}`);
+                $('#venuedetail').text(k.properties.name);
                 $('#venueaddress').text(`Address: ${k.properties.address}`);
                 $('#venuehour').text(`Opening-Hour: ${k.properties.hour}`)
+                map.setView([lat, lng], 20)
                 
              })
 
@@ -71,9 +74,10 @@ $(function() {
                                 <tr><th>Address:</th><td>${a.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${a.properties.hour}</td></tr></table>`);
              marker.on('click',function(){
-                $('#venuedetail').text(`Name: ${a.properties.name}`)
+                $('#venuedetail').text(a.properties.name)
                 $('#venueaddress').text(`Address: ${a.properties.address}`)
                 $('#venuehour').text(`Opening-Hour: ${a.properties.hour}`)
+                map.setView([lat, lng], 20)
 
              })
              alleyGroup.addLayer(marker);
@@ -104,25 +108,31 @@ $(function() {
                 map.addLayer(koiGroup);
                 map.addLayer(alleyGroup);
                 map.closePopup();
+                map.setView([1.3521, 103.8198], 11)
             } else if(map.hasLayer(xinfutangGroup)){
                 map.addLayer(tigerGroup);
                 map.addLayer(koiGroup);
                 map.addLayer(alleyGroup);
                 map.closePopup();
+                map.setView([1.3521, 103.8198], 11)
             } else if(map.hasLayer(koiGroup)){
                 map.addLayer(xinfutangGroup);
                 map.addLayer(tigerGroup);
                 map.addLayer(alleyGroup);
+                map.setView([1.3521, 103.8198], 11)
                 map.closePopup();
             } else if(map.hasLayer(alleyGroup)){
                 map.addLayer(xinfutangGroup);
                 map.addLayer(tigerGroup);
                 map.addLayer(koiGroup);
+                map.setView([1.3521, 103.8198], 11)
+                map.closePopup();
             } else{
                 map.addLayer(tigerGroup);
                 map.addLayer(xinfutangGroup);
                 map.addLayer(koiGroup);
                 map.addLayer(alleyGroup);
+                map.setView([1.3521, 103.8198], 11)
             }
         })
 
@@ -130,7 +140,7 @@ $(function() {
                 map.removeLayer(tigerGroup)
                 map.removeLayer(xinfutangGroup)
                 map.removeLayer(koiGroup)
-                 map.removeLayer(alleyGroup)
+                map.removeLayer(alleyGroup)
             
         })
 
@@ -171,8 +181,9 @@ $(function() {
                     
                 }
                 }).then(function(detail){
-                    $('#venuedetail').text(`Name: ${detail.data.response.venue.name}`)
+                    $('#venuedetail').text(detail.data.response.venue.name)
                     $('#venueaddress').text(`Address: ${detail.data.response.venue.location.address}`)
+                    map.setView([place.location.lat,place.location.lng], 17)
 
                    
                 })
