@@ -1,9 +1,9 @@
 body{
-    background-color:white;
+    background-image: url(../image/bbtbackground.jpg);
 }
 
 #top-banner{
-    background-image:url(image/thingtoknowbanner.PNG);
+    background-image:url(../image/thingtoknowbanner.PNG);
     background-size:cover;
     background-position: center center;
     background-position-y: 85%;

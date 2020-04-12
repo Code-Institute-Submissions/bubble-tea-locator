@@ -69,7 +69,7 @@ $(function() {
         for (let a of thealley.data.features){
              let lat = a.geometry.coordinates[1];
              let lng = a.geometry.coordinates[0];
-             let marker = L.marker([lat,lng]);
+             let marker = L.marker([lat,lng],{icon:alleyIcon});
              marker.bindPopup(`<table><tr><th>Name:</th><td>${a.properties.name}</td></tr>
                                 <tr><th>Address:</th><td>${a.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${a.properties.hour}</td></tr></table>`);
@@ -158,7 +158,8 @@ $(function() {
 
     let tigerIcon = new bubbleIcon({iconUrl:'image/tiger.png'}),
         koiIcon= new bubbleIcon({iconUrl:'image/koilogo.png'}),
-        xftIcon= new bubbleIcon({iconUrl:'image/xftlogo.png'})
+        xftIcon= new bubbleIcon({iconUrl:'image/xftlogo.png'}),
+        alleyIcon= new bubbleIcon({iconUrl:'image/alleylogo.png'})
 
     let clientID="TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";
     let clientSecret="WS143U3Y1EXII1WNZZWOYV2I30DTACSTX5IJMM0C1HTWMW0U";
