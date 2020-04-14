@@ -34,7 +34,7 @@ can press the button again to remove from the map.
 
 ## Wireframes ##
 Wireframes was created to help me to visualise and design a layout for my website. The wireframe can 
-be view via this [link]().
+be view via this [link](https://github.com/melvilleng/bubble-tea-locator/tree/master/Wireframe).
 
 ## User Stories ##
 These are the user stories that i was thinking to achieve while building the website:
