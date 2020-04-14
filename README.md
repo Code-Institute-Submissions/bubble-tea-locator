@@ -1,35 +1,47 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Project 2: Bubble Tea Shop Locator #
 
-Welcome Melville,
+### Interactive Front-end Web Development Project 2 ###
+By: Melville Ng
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Demo ##
+Website site link can be found [here](https://melvilleng.github.io/bubble-tea-locator/)
 
-## Gitpod Reminders
+## Aim ##
+The aim of this project is for people that love bubble tea to be able to locate the nearest bubble tea
+shop to their current location. At the same time, to know the different bubble tea shop nearest to them so 
+that they have a few choices to choose from.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## UI ##
+The intention to make the website bubblier feel with colourful theme. The navbar colour light blue 
+was chosen to match with the colourful background. 
+The website is also mobile responsive as the width of the map will cover the screen.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+## UX ##
+The user is also greeted with a map box map once they enter the site. The application on the screen 
+give the user control. The website is for users that are looking for a simple bubble tea locator.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The user will want to find his or her current location, the user can press on the men button to determine the user
+current location.
+The user will want to filter the different bubble tea store, the top right-hand corner control button is
+able to filter different bubble tea brand.
+The user is also able to press the reset button to bring back all the marker.
+Able to remove all the marker with the remove marker button.
+There another shopping mall button once press all the shopping mall area will be mark out and u 
+can press the button again to remove from the map.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+## Wireframes ##
+Wireframes was created to help me to visualise and design a layout for my website. The wireframe can 
+be view via this [link]().
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+## User Stories ##
+These are the user stories that i was thinking to achieve while building the website:
+1. To create a webpage for bubble tea lover
+2. To let the user, locate the nearest bubble tea
+3. To let user, know more about bubble tea
+4. To let user, know different store has what specialty.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
