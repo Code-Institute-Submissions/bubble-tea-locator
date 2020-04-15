@@ -54,7 +54,7 @@ These are the user stories that i was thinking to achieve while building the web
 * The shopping mall button can be toggle on and off to show the shopping mall location and
   you can see width the mall what bubble tea shop are there
 * The navbar can bring you to different pages of the website
-
+* Mobile responsive
 
 Future features:
 * To add in a real time information to update on the crowd
@@ -90,6 +90,7 @@ Below are a list of framework, programming languages and tools used for the webs
   the map when pressed and when it press again all the circle marker will be remove from the map.
 * The men logo button when press will ask you to enable your location if u press block it will say please enable location to view current location. 
   If you press enable location it will bring you to your current location in Singapore.
+* Tested on Mobile device view as only the map will be shown.
 
 The website was tested on different web browser and different mobile device.
 Device and browsers tested on are:
