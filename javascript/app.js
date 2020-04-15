@@ -14,12 +14,12 @@ $(function () {
                                 <tr><th>Address:</th><td>${t.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${t.properties.hour}</td></tr></table>`);
             marker.on('click', function () {
-                $('#venuedetail').text(t.properties.name)
-                $('#venueaddress').text(`Address: ${t.properties.address}`)
-                $('#venuehour').text(`Opening-Hour: ${t.properties.hour}`)
-                map.setView([lat, lng], 20)
+                $('#venuedetail').text(t.properties.name);
+                $('#venueaddress').text(`Address: ${t.properties.address}`);
+                $('#venuehour').text(`Opening-Hour: ${t.properties.hour}`);
+                map.setView([lat, lng], 20);
 
-            })
+            });
             tigerGroup.addLayer(marker);
         }
 
@@ -34,10 +34,10 @@ $(function () {
             marker.on('click', function () {
                 $('#venuedetail').text(x.properties.name);
                 $('#venueaddress').text(`Address: ${x.properties.address}`);
-                $('#venuehour').text(`Opening-Hour: ${x.properties.hour}`)
-                map.setView([lat, lng], 20)
+                $('#venuehour').text(`Opening-Hour: ${x.properties.hour}`);
+                map.setView([lat, lng], 20);
 
-            })
+            });
 
             xinfutangGroup.addLayer(marker);
 
@@ -55,10 +55,10 @@ $(function () {
             marker.on('click', function () {
                 $('#venuedetail').text(k.properties.name);
                 $('#venueaddress').text(`Address: ${k.properties.address}`);
-                $('#venuehour').text(`Opening-Hour: ${k.properties.hour}`)
-                map.setView([lat, lng], 20)
+                $('#venuehour').text(`Opening-Hour: ${k.properties.hour}`);
+                map.setView([lat, lng], 20);
 
-            })
+            });
 
             koiGroup.addLayer(marker);
 
@@ -74,12 +74,12 @@ $(function () {
                                 <tr><th>Address:</th><td>${a.properties.address}</td></tr>
                                 <tr><th>Opening-hours:</th><td>${a.properties.hour}</td></tr></table>`);
             marker.on('click', function () {
-                $('#venuedetail').text(a.properties.name)
-                $('#venueaddress').text(`Address: ${a.properties.address}`)
-                $('#venuehour').text(`Opening-Hour: ${a.properties.hour}`)
-                map.setView([lat, lng], 20)
+                $('#venuedetail').text(a.properties.name);
+                $('#venueaddress').text(`Address: ${a.properties.address}`);
+                $('#venuehour').text(`Opening-Hour: ${a.properties.hour}`);
+                map.setView([lat, lng], 20);
 
-            })
+            });
             alleyGroup.addLayer(marker);
         }
 
@@ -95,7 +95,7 @@ $(function () {
             'Koi': koiGroup,
             'The Alley': alleyGroup,
 
-        }
+        };
 
 
 
@@ -111,19 +111,19 @@ $(function () {
             map.setView([1.3521, 103.8198], 11);
             map.closePopup();
 
-        })
+        });
         // To Remove all marker
         $("#Removebbmarker").click(function () {
-            map.removeLayer(tigerGroup)
-            map.removeLayer(xinfutangGroup)
-            map.removeLayer(koiGroup)
-            map.removeLayer(alleyGroup)
+            map.removeLayer(tigerGroup);
+            map.removeLayer(xinfutangGroup);
+            map.removeLayer(koiGroup);
+            map.removeLayer(alleyGroup);
 
-        })
+        });
 
 
 
-    }))
+    }));
     // changing from default icon
     let bubbleIcon = L.Icon.extend({
         options: {
@@ -136,8 +136,8 @@ $(function () {
     let tigerIcon = new bubbleIcon({ iconUrl: 'image/tiger.png' }),
         koiIcon = new bubbleIcon({ iconUrl: 'image/koilogo.png' }),
         xftIcon = new bubbleIcon({ iconUrl: 'image/xftlogo.png' }),
-        alleyIcon = new bubbleIcon({ iconUrl: 'image/alleylogo.png' })
-    menIcon = new bubbleIcon({ iconUrl: 'image/men.png' })
+        alleyIcon = new bubbleIcon({ iconUrl: 'image/alleylogo.png' }),
+        menIcon = new bubbleIcon({ iconUrl: 'image/men.png' })
 
 
     let clientID = "TP1OGF4LPNBRT25GCKPPD035ZWX5ZEVUHR0VBVA5VYU3WTLF";

@@ -100,7 +100,7 @@ Device and browsers tested on are:
     * Google Chrome
     * Safari
 * Window laptop
-    * google chrome
+    * Google chrome
     * Microsoft Edge
 * Iphone
     * Safari
