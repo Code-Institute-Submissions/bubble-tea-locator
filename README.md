@@ -53,7 +53,7 @@ These are the user stories that i was thinking to achieve while building the web
 * There a remove all bubble marker button that u can remove any existing marker left on the map
 * The shopping mall button can be toggle on and off to show the shopping mall location and
   you can see width the mall what bubble tea shop are there
-* The navbar can bring you to different pages
+* The navbar can bring you to different pages of the website
 
 
 Future features:
@@ -109,8 +109,8 @@ Device and browsers tested on are:
 
 
 ### Bugs ###
-The stickmen logo that appear after pressing the men logo will change if the current location of the user change. 
-So, their chances that another stick men might appear due to short shift in current location. 
+The stickmen logo that appear after pressing the men logo will change location if the current location of the user change. 
+So, there is a chance that another stick men might appear due to short shift in current location. 
 At the same time, if the website could not detect the user current location even after enabling current location the enable your location message will appear. 
 This is due to not able to detect your current location.
 
