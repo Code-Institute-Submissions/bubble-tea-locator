@@ -121,14 +121,13 @@ Click on the link to find the deployed website which use GitHub pages. The page 
 I deploy the website by going to my repository, click on setting at the top and scroll down to the heading GitHub Pages. Under the source, I choose the master branch and deploy it.
 
 ## Credit ##
-###Codes###
 1. Bootstrap Https://getbootstrap.com/
 2. Foursquare API https://foursquare.com/developers
 3. Geojson maker http://geojson.io/
 4. Leaflet https://leafletjs.com/
 5. Map https://www.mapbox.com/
 
-###Media###
+### Photo ###
 1. https://www.koithe.com/en/global/koi-singapore
 2. https://www.facebook.com/tigersugarSGofficial/
 3. https://xingfutangsg.com/
