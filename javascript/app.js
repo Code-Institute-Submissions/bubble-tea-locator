@@ -127,8 +127,8 @@ $(function () {
     // changing from default icon
     let bubbleIcon = L.Icon.extend({
         options: {
-            iconSize: [50, 100],
-            iconAnchor: [22, 94],
+            iconSize: [25, 60],
+            iconAnchor: [22, 54],
             popupAnchor: [-3, -76]
         }
     });
